@@ -1,6 +1,6 @@
 export const AProposBody = () => {
 	return (
-	  <main >
+	  <main id="main">
 		<h1>AProposBody</h1>
 	  </main>
 	);

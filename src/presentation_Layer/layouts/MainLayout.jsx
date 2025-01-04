@@ -1,12 +1,11 @@
 import { Outlet } from "react-router-dom";
-import { Footer } from "./../components/footer/Footer";
+import { Footer } from "../components/footer/Footer";
 import { Header } from "./../components/header/Header";
+import styles from "./MainLayout.module.scss";
 
 export const MainLayout = () => {
   return (
-    <>
-      <h1>MainLayout</h1>
-      <hr></hr>
+    <div className={styles.layout} id="mainLayout">
       <Header></Header>
 
       {/* ici centent body */}
@@ -14,6 +13,6 @@ export const MainLayout = () => {
       <Outlet></Outlet>
 
       <Footer></Footer>
-    </>
+    </div>
   );
 };

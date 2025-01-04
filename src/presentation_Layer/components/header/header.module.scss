@@ -3,8 +3,7 @@
   height: 68px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   width: 100%;
 
@@ -27,8 +26,8 @@
         list-style: none;
 
         a {
-        //   text-decoration: unset;
-        color: black;
+          //   text-decoration: unset;
+          color: black;
         }
       }
     }
@@ -38,4 +37,3 @@
 .noUnderline {
   text-decoration: unset;
 }
-

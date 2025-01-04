@@ -1,8 +1,10 @@
+import { HeroSection } from "./HeroSection";
 
 export const HomeBody = () => {
-	return (
-	  <main>
-		<h1>HomeBody</h1>
-	  </main>
-	);
-  };
+  return (
+    <main id="main">
+      <HeroSection></HeroSection>
+      <br />
+    </main>
+  );
+};
