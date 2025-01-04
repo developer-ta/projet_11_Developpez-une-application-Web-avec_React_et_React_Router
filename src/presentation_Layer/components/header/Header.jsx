@@ -1,9 +1,21 @@
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import styles from "./header.module.scss";
 
 export const Header = () => {
+  // hook
+  const location = useLocation();
+  const pathname = location.pathname;
+  console.log("pathname: ", pathname);
+
+  console.log("location: ", styles.underline);
+  //function
+  const navigateHandler = (url) => {
+    navigate(url);
+  };
+
   return (
     <header className={styles.header}>
-      <h1>Header</h1>
+      {/* <h1>Header</h1> */}
       <i>
         <svg
           width="211"
@@ -37,8 +49,20 @@ export const Header = () => {
 
       <nav>
         <ul>
-          <li>Accueil</li>
-          <li>A Propos</li>
+          <li>
+            <Link to="/" className={pathname == "/a-propos" &&  styles.noUnderline}>
+              Accueille
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/a-propos"
+              className={pathname == "/a-propos" || styles.noUnderline}
+            >
+              A Propos
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
