@@ -1,4 +1,5 @@
-import styles from "./HomeBody.module.scss";
+import styles from "./HomeBodySection.module.scss";
+
 
 export const HeroSection = () => {
   return (

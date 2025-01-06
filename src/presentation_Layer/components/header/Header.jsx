@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import styles from "./header.module.scss";
+import styles from "./Header.module.scss";
 
 export const Header = () => {
   // hook
@@ -19,7 +19,7 @@ export const Header = () => {
           <li>
             <Link
               to="/"
-              className={pathname == "/a-propos" ? styles.noUnderline : ""}
+              className={pathname == "/a-propos" || pathname == "/CardDetail" ? styles.noUnderline : ""}
             >
               Accueil
             </Link>

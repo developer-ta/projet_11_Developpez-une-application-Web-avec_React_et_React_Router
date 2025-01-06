@@ -1,12 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 //page
 import { Home } from "../pages/home/Home";
-import { HomeBody } from './../components/home/HomeBody';
-import { APropos } from "./../pages/aPropos/APropos";
-import { AProposBody } from "./../components/aPropos/AProposBody";
+import { HomeBody } from "./../components/home/HomeBody";
+
 import { FishLogementBody } from "../components/fishLogement/FishLogementBody";
 import { FishLogement } from "./../pages/fishLogement/FishLogement";
 import { NotFoundPage } from "./../pages/notFoundPage/NotFoundPage";
+import { APropos } from "./../pages/aPropos/APropos";
+import { AProposBody } from "./../components/aPropos/AProposBody";
+import { CardDetails } from "../pages/CardDetails/CardDetails";
+import { CardDetailsBody } from "../components/CardDetails/CardDetailsBody";
 
 const router = createBrowserRouter([
   // Home
@@ -36,7 +39,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <AProposBody/>,
+        element: <AProposBody />,
       },
     ],
   },
@@ -48,6 +51,18 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <FishLogementBody />,
+      },
+    ],
+  },
+
+  // CardDetail
+  {
+    path: "/CardDetail",
+    element: <CardDetails />,
+    children: [
+      {
+        index: true,
+        element: <CardDetailsBody />,
       },
     ],
   },

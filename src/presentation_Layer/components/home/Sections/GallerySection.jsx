@@ -1,5 +1,10 @@
-import styles from "./HomeBody.module.scss";
-import { Thumb } from "./ThumbLocation";
+
+import { Thumb } from './ThumbLocation';
+import styles from "./HomeBodySection.module.scss";
+import { Link } from 'react-router-dom';
+
+
+
 
 export const GallerySection = () => {
   const listCard = [1, 2, 3, 4, 5, 6];
@@ -9,7 +14,7 @@ export const GallerySection = () => {
       <img src="src\presentation_Layer\assets\img_heroSection.jpg" alt="" /> */}
       <div id={styles["gallery"]}>
         {listCard.map((li) => (
-          <Thumb></Thumb>
+        <Thumb></Thumb>
         ))}
       </div>
     </section>

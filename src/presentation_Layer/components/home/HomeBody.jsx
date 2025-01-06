@@ -1,5 +1,6 @@
-import { HeroSection } from "./HeroSection";
-import { GallerySection } from "./GallerySection";
+
+import { HeroSection } from './Sections/HeroSection';
+import { GallerySection } from './Sections/GallerySection';
 
 export const HomeBody = () => {
   return (
