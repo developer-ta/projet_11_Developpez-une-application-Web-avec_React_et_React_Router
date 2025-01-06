@@ -4,4 +4,20 @@
   max-height: 209px;
   height: 100%;
   background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    width: 100%;
+    max-width: 122px;
+    max-height: 39.44px;
+    height: 100%;
+  }
+
+  p{
+    font-size: 500;
+  }
 }
