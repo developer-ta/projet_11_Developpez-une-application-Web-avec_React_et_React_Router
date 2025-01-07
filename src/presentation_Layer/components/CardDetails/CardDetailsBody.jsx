@@ -12,7 +12,7 @@ export const CardDetailsBody = () => {
       <Carrousel></Carrousel>
       <MainSection></MainSection>
 
-      <div id="Details">
+      <div id={styles["details"]}>
         <Dropdown>
           <h2>Description</h2>
         </Dropdown>
