@@ -1,23 +1,24 @@
-import { useState } from "react";
+
 import { Carrousel } from "./Carrousel";
 import { Dropdown } from "./Dropdown";
+import styles from "./CardDetailsBody.module.scss";
+import { MainSection } from "./MainSection";
 
 export const CardDetailsBody = () => {
-  const [AProposData, SetData] = useState({});
+
 
   return (
     <main id="main">
       <Carrousel></Carrousel>
-      <div className="title">
-        <h2>Cozy loft on the Canal Saint-Martin</h2>
-        <p>Paris, Île-de-France</p>
-      </div>
-      <div id="host"></div>
-      <div id="rate"></div>
-      <div id="tags"></div>
+      <MainSection></MainSection>
+
       <div id="Details">
-        <Dropdown></Dropdown>
-        <Dropdown></Dropdown>
+        <Dropdown>
+          <h2>Description</h2>
+        </Dropdown>
+        <Dropdown>
+          <h2>Équipements</h2>
+        </Dropdown>
       </div>
     </main>
   );

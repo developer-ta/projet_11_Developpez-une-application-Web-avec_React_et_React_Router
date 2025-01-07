@@ -1,7 +1,4 @@
-export const Dropdown = () => {
-  return (
-    <div id="main">
-      <h1>Dropdown</h1>
-    </div>
-  );
+export const Dropdown = ({ children }) => {
+
+  return <div id="dropdown">{children}</div>;
 };
