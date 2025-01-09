@@ -1,22 +1,15 @@
 import styles from "./CardDetailsBody.module.scss";
+import  arrowLeft  from "../../assets/arrowLeft.svg";
+import arrowForward  from "../../assets/arrowForward.svg";
 
-export const Carrousel = () => {
+export const Carrousel = ({ cover, pictures }) => {
   return (
     <div id={styles["carrousel"]}>
+      <img src={cover} alt="cover_photo" />
+
       <div className={styles["arrow-carrousel"]}>
-        {" "}
-        <img
-          src="src/presentation_Layer/assets/arrowLeft.svg"
-          alt="icon"
-          srcset=""
-          className={styles["arrowBack"]}
-        />
-        <img
-          src="src/presentation_Layer/assets/arrowForward.svg"
-          alt="icon"
-          srcset=""
-          className={styles["arrowForward"]}
-        />
+        <img src={arrowLeft} alt="icon" className={styles["arrowBack"]} />
+        <img src={arrowForward} alt="icon" className={styles["arrowForward"]} />
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ export const MainSection = () => {
         <div id={styles["group-2"]}>
           <div id={styles["tags"]}>
             {AProposData.tagsText.map((el) => (
-              <p>{el}</p>
+              <p key={el}>{el}</p>
             ))}
           </div>
 
@@ -39,6 +39,7 @@ export const MainSection = () => {
               <img
                 src="src/presentation_Layer/assets/star.svg"
                 className="star"
+                key={i}
               ></img>
             ))}
           </div>
