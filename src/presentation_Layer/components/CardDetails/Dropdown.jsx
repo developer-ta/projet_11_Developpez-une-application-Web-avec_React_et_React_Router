@@ -6,8 +6,8 @@ export const Dropdown = (props) => {
   const { type, details } = props;
   // const refDescription = useRef();
   // const refEquipment = useRef();
-  const [isVisibleDescription, setIsVisibleDescription] = useState(false);
-  const [isVisibleEquipment, setIsVisibleEquipment] = useState(false);
+  const [isVisibleDescription, setIsVisibleDescription] = useState(true);
+  const [isVisibleEquipment, setIsVisibleEquipment] = useState(true);
   const openDetail = useCallback((type) => {
     if (type === "Équipements") {
       setIsVisibleEquipment(!isVisibleEquipment);
