@@ -34,12 +34,8 @@ export const CardDetailsBody = () => {
         ></MainSection>
 
         <div id={styles["details"]}>
-          <Dropdown type={description}>
-            <h2>Description</h2>
-          </Dropdown>
-          <Dropdown type={equipments}>
-            <h2>Équipements</h2>
-          </Dropdown>
+          <Dropdown details={description} type={"Description"}></Dropdown>
+          <Dropdown details={equipments} type={"Équipements"}></Dropdown>
         </div>
       </main>
     );

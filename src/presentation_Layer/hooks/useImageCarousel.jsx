@@ -3,7 +3,6 @@ import { useCallback, useRef, useState } from "react";
 export const useImageCarousel = (cover, pictures) => {
   const index = useRef(0);
   const [imag, setImg] = useState(cover);
-  console.log("imag: ", imag);
 
   const turnImgHandler = useCallback((arg) => {
     const maxIndex = pictures.length - 1;
@@ -17,8 +16,8 @@ export const useImageCarousel = (cover, pictures) => {
       index.current = maxIndex;
     }
     setImg(pictures[index.current]);
-	return 'ok'
+    return "ok";
   });
 
-  return {turnImgHandler,imag};
+  return { turnImgHandler, imag };
 };
