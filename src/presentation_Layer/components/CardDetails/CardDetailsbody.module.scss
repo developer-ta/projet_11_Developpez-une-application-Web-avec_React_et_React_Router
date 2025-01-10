@@ -1,12 +1,10 @@
 main {
   #carrousel {
     width: 100%;
-    /* background-color: aquamarine; */
-    /* background-image: url("src/presentation_Layer/assets/img_accomodation.jpg"); */
+  
     max-height: 415px;
     height: 100%;
     margin-bottom: 3%;
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,7 +23,9 @@ main {
       flex-direction: row;
       justify-content: space-between;
       position: fixed;
-      width: 100%;
+      width: 90%;
+      max-width: 1240px;
+      flex-wrap: nowrap;
     }
   }
 

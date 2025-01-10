@@ -1,5 +1,6 @@
 import styles from "./CardDetailsBody.module.scss";
 import { useState } from "react";
+import star from "../../assets/star.svg";
 
 export const MainSection = () => {
   const [AProposData, SetData] = useState({
@@ -36,11 +37,7 @@ export const MainSection = () => {
 
           <div id={styles["rate"]}>
             {AProposData.rates.map((i) => (
-              <img
-                src="src/presentation_Layer/assets/star.svg"
-                className="star"
-                key={i}
-              ></img>
+              <img src={star} className="star" key={i}></img>
             ))}
           </div>
         </div>

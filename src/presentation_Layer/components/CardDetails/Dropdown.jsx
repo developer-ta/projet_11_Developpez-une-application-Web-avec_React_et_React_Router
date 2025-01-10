@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import styles from "./CardDetailsBody.module.scss";
+import arrowBack from "../../assets/arrowBack.svg"
 
 export const Dropdown = (props) => {
   const { children, type } = props;
@@ -17,7 +18,7 @@ export const Dropdown = (props) => {
         {children}
         <img
           onClick={() => {}}
-          src="src/presentation_Layer/assets/arrowBack.svg"
+          src={arrowBack}
           alt="icon"
           className={styles["arrow"]}
         />
