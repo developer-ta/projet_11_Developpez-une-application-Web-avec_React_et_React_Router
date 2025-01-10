@@ -25,7 +25,13 @@ export const CardDetailsBody = () => {
       <main id="main">
         <Carrousel cover={cover} pictures={pictures}></Carrousel>
 
-        <MainSection ></MainSection>
+        <MainSection
+          tags={tags}
+          rating={rating}
+          title={title}
+          location={location}
+          host={host}
+        ></MainSection>
 
         <div id={styles["details"]}>
           <Dropdown type={description}>

@@ -1,12 +1,13 @@
 import styles from "./CardDetailsBody.module.scss";
-import { useState } from "react";
+
 import star from "../../assets/star.svg";
 
-export const MainSection = () => {
-  const [AProposData, SetData] = useState({
-    tagsText: ["Cozy", "Paris 10", "Canal"],
-    rates: [1, 2, 3, 4, 5],
-  });
+import { useRating } from "./../../hooks/useRating";
+
+export const MainSection = ({ tags, rating, host,title,location }) => {
+  const listImgStar = useRating(rating);
+
+
   return (
     <>
       <section id={styles["union"]}>
@@ -15,28 +16,27 @@ export const MainSection = () => {
           className={styles["flex-row"] + styles["space-between"]}
         >
           <div className={styles["title"]}>
-            <h2>Cozy loft on the Canal Saint-Martin</h2>
-            <p>Paris, Île-de-France</p>
+            <h2>{title}</h2>
+            <p>{location}</p>
           </div>
 
           <div id={styles["host"]}>
             <p>
-              Alexandre <br />
-              Dumas
+             {host.name}
             </p>
-            <span className={styles["circle"]}></span>
+            <div className={styles["circle"]}><img src={host.picture} alt="host picture" /></div>
           </div>
         </div>
 
         <div id={styles["group-2"]}>
           <div id={styles["tags"]}>
-            {AProposData.tagsText.map((el) => (
+            {tags.map((el) => (
               <p key={el}>{el}</p>
             ))}
           </div>
 
           <div id={styles["rate"]}>
-            {AProposData.rates.map((i) => (
+            {listImgStar.map((i) => (
               <img src={star} className="star" key={i}></img>
             ))}
           </div>

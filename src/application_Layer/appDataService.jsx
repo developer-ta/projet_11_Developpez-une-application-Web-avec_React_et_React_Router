@@ -20,3 +20,11 @@ export class AppDataService {
   //   return this.data ? this.data.find((el) => el.id == id) : null;
   // }
 }
+
+export function starRatingService(rating) {
+  const listStart = [];
+  for (let i = 0; i < rating; i++) {
+    listStart.push(i);
+  }
+  return listStart;
+}

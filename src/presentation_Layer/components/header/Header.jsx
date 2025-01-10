@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Header.module.scss";
+import logo from "../../assets/logo.svg";
 
 export const Header = () => {
   // hook
@@ -11,7 +12,7 @@ export const Header = () => {
     <header className={styles.header}>
       {/* <h1>Header</h1> */}
       <Link to="/home">
-        <img src="src\presentation_Layer\assets\logo.svg"></img>
+        <img src={logo}></img>
       </Link>
 
       <nav>
