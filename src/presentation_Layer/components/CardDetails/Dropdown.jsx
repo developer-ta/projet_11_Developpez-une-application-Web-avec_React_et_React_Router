@@ -2,17 +2,16 @@ import { useCallback, useRef, useState } from "react";
 import styles from "./CardDetailsBody.module.scss";
 import arrowBack from "../../assets/arrowBack.svg";
 
-export const Dropdown = (props) => {
-  const { type, details } = props;
+export const Dropdown = ({ type, details }) => {
   // const refDescription = useRef();
   // const refEquipment = useRef();
-  const [isVisibleDescription, setIsVisibleDescription] = useState(true);
-  const [isVisibleEquipment, setIsVisibleEquipment] = useState(true);
+  const [isVisibleDescription, setIsVisibleDescription] = useState(false);
+  const [isVisibleEquipment, setIsVisibleEquipment] = useState(false);
   const openDetail = useCallback((type) => {
     if (type === "Équipements") {
-      setIsVisibleEquipment(!isVisibleEquipment);
+      setIsVisibleEquipment((isVisible) => !isVisible);
     }
-    setIsVisibleDescription(!isVisibleDescription);
+    setIsVisibleDescription((isVisible) => !isVisible);
   });
 
   if (type === "Équipements") {
@@ -24,16 +23,24 @@ export const Dropdown = (props) => {
             onClick={() => openDetail(type)}
             src={arrowBack}
             alt="icon"
-            className={styles["arrow"]}
+            className={
+              isVisibleEquipment
+                ? styles["animation_open"]
+                : styles["animation_close"]
+            }
           />
         </div>
 
         <div
-          className={isVisibleEquipment ? styles["hidden"] : styles["visible"]}
+          className={
+            isVisibleEquipment
+              ? styles["animation_down"]
+              : styles["hidden"]
+          }
         >
           <ul className={styles["list-style"]}>
             {details.map((el) => (
-              <li>{el}</li>
+              <li key={el}>{el}</li>
             ))}
           </ul>
         </div>
@@ -49,12 +56,20 @@ export const Dropdown = (props) => {
           onClick={(e) => openDetail(type)}
           src={arrowBack}
           alt="icon"
-          className={styles["arrow"]}
+          className={
+            isVisibleDescription
+              ? styles["animation_open"]
+              : styles["animation_close"]
+          }
         />
       </div>
 
       <div
-        className={isVisibleDescription ? styles["hidden"] : styles["visible"]}
+        className={
+          isVisibleDescription
+            ? styles["animation_down"]
+            :styles["hidden"]
+        }
       >
         <p className={styles["list-style"]}>{details}</p>
       </div>
