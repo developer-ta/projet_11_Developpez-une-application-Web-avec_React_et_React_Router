@@ -40,11 +40,10 @@ const router = createBrowserRouter([
       },
     ],
   },
- 
 
   // CardDetail
   {
-    path: "/CardDetail/:id",
+    path: "/cardDetail/:id",
     element: <CardDetails />,
     children: [
       {

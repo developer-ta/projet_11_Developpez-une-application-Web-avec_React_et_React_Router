@@ -21,7 +21,8 @@ export const Header = () => {
             <Link
               to="/"
               className={
-                pathname == "/a-propos" || pathname == "/CardDetail/:id"
+                pathname == "/a-propos" ||
+                pathname.split('/').includes("cardDetail")
                   ? styles.noUnderline
                   : ""
               }

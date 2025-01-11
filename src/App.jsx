@@ -5,9 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import routerConfig from "./presentation_Layer/router";
 
 function App() {
-  //const [count, setCount] = useState(0);
 
-  // console.log('navigate: ', navigate);
   return (
     <>
       <RouterProvider router={routerConfig} />

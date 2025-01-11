@@ -5,11 +5,9 @@ export const ThumbLocation = ({title,cover,id,refObjet}) => {
 
 
   return (
-    <Link to={`/CardDetail/${id}`} id={styles.card} state={refObjet}>
+    <Link to={`/cardDetail/${id}`} id={styles.card} state={refObjet}>
       <img src={cover} alt="" className="location-img" />
-      <h3>
-      {title}
-      </h3>
+      <h3>{title}</h3>
     </Link>
   );
 };
