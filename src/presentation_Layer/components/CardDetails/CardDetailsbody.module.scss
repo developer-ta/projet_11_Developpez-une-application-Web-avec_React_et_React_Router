@@ -118,14 +118,18 @@ main {
       }
       #rate {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         align-content: center;
         max-width: 196px;
         max-height: 36px;
         width: 100%;
-        justify-content: space-around;
+        justify-content: flex-end;
+
+        img {
+          margin-left: 4%;
+        }
       }
     }
 

@@ -21,7 +21,7 @@ export const Dropdown = ({ type, details }) => {
     return (
       <div className={styles["container-dropdown"]}>
         <div id={styles["dropdown"]}>
-          <h4>{type}</h4>
+          <h5>{type}</h5>
           <img
             onClick={() => openDetail(type)}
             src={arrowBack}
@@ -52,7 +52,7 @@ export const Dropdown = ({ type, details }) => {
   return (
     <div className={styles["container-dropdown"]}>
       <div id={styles["dropdown"]}>
-        <h4>{type}</h4>
+        <h5>{type}</h5>
         <img
           onClick={(e) => openDetail(type)}
           src={arrowBack}
