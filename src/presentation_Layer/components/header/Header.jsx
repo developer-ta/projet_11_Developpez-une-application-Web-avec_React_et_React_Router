@@ -20,7 +20,11 @@ export const Header = () => {
           <li>
             <Link
               to="/"
-              className={pathname == "/a-propos" || pathname == "/CardDetail" ? styles.noUnderline : ""}
+              className={
+                pathname == "/a-propos" || pathname == "/CardDetail/:id"
+                  ? styles.noUnderline
+                  : ""
+              }
             >
               Accueil
             </Link>
