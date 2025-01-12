@@ -8,6 +8,7 @@ export const Carrousel = ({ cover, pictures }) => {
   const { turnImgHandler, imag, isSingleImg, currentImgNumber } =
     useImageCarousel(cover, pictures);
 
+  console.log("isSingleImg: ", isSingleImg);
   return (
     <div id={styles["carrousel"]}>
       <img src={imag} alt="cover_photo" />

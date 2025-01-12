@@ -12,13 +12,6 @@ export class AppDataService {
     return this.data;
   }
 
-  // async getById(id) {
-  //   if (!this.data) {
-  //     this.data = await this.getAllData(url);
-  //   }
-
-  //   return this.data ? this.data.find((el) => el.id == id) : null;
-  // }
 }
 
 export function starRatingService(rating) {
@@ -27,4 +20,20 @@ export function starRatingService(rating) {
     listStart.push(i);
   }
   return listStart;
+}
+
+export function sliderService(currentIndex,pictures, arg) {
+  const maxIndex = pictures.length - 1;
+
+   currentIndex.current += arg;
+  if (maxIndex == 0) {
+    return currentIndex.current;
+  } else if (currentIndex.current > maxIndex) {
+    currentIndex.current = 0;
+  } else if (currentIndex.current < 0) {
+    currentIndex.current = maxIndex;
+  }
+  console.log('currentIndex: ', currentIndex.current);
+
+  return currentIndex.current;
 }
