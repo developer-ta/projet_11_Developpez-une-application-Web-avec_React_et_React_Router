@@ -20,6 +20,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomeBody />,
       },
+
       {
         path: "home",
         element: <HomeBody />,
@@ -56,11 +57,11 @@ const router = createBrowserRouter([
   },
   //page 404
   {
-    path: "/*",
+    path: "*",
     element: <NotFoundPage />,
     children: [
       {
-        index: true,
+        path: "*",
         element: <NotFoundPageBody />,
       },
     ],
