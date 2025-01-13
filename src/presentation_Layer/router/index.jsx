@@ -2,11 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 //page
 import { Home } from "../pages/home/Home";
 import { HomeBody } from "./../components/home/HomeBody";
-import { NotFoundPage } from "./../pages/notFoundPage/NotFoundPage";
+
 import { APropos } from "./../pages/aPropos/APropos";
 import { AProposBody } from "./../components/aPropos/AProposBody";
 import { CardDetails } from "../pages/CardDetails/CardDetails";
 import { CardDetailsBody } from "../components/CardDetails/CardDetailsBody";
+import { NotFoundPage } from "../pages/notFoundPage/NotFoundPage";
 
 const router = createBrowserRouter([
   // Home
@@ -52,9 +53,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-  //default
+  //page 404
   {
-    path: "/*",
+    path: "/aa",
     element: <NotFoundPage />,
   },
 ]);
