@@ -1,0 +1,40 @@
+.notFound {
+  
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 142.6%;
+
+  align-items: center;
+  text-align: center;
+  color: #ff6060;
+}
+.alert {
+  width: 872px;
+  height: 51px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+  align-items: flex-end;
+  color: #ff6060;
+}
+.returnHome {
+  width: 284px;
+  height: 26px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+
+  align-items: flex-end;
+  text-decoration-line: underline;
+  color: #000000;
+}

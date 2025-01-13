@@ -8,6 +8,7 @@ import { AProposBody } from "./../components/aPropos/AProposBody";
 import { CardDetails } from "../pages/CardDetails/CardDetails";
 import { CardDetailsBody } from "../components/CardDetails/CardDetailsBody";
 import { NotFoundPage } from "../pages/notFoundPage/NotFoundPage";
+import { NotFoundPageBody } from "../pages/notFoundPage/NotFoundPageBody";
 
 const router = createBrowserRouter([
   // Home
@@ -55,8 +56,14 @@ const router = createBrowserRouter([
   },
   //page 404
   {
-    path: "/aa",
+    path: "/*",
     element: <NotFoundPage />,
+    children: [
+      {
+        index: true,
+        element: <NotFoundPageBody />,
+      },
+    ],
   },
 ]);
 export default router;
