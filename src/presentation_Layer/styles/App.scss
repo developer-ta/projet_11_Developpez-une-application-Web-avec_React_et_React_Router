@@ -12,13 +12,15 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-   
     width: 100%;
     height: 100%;
     max-width: 1440px;
     max-height: 1517px;
     align-items: center;
     flex-wrap: wrap;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 
     #root {
       width: 100%;

@@ -1,12 +1,14 @@
 main {
-  #Carrousel {
-  }
-
-  .title {
-  }
-  .flex-column{}
-  .flex-row{}
-  
-  #Dropdown {
+  #details {
+    display: flex;
+   
+    max-width: 1023px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin-top: 3%;
+    width: 100%;
+    align-items: center;
   }
 }

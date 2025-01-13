@@ -1,11 +1,12 @@
 import styles from "./HomeBodySection.module.scss";
 
 
-export const HeroSection = () => {
+export const HeroSection = ({ sectionStyle, boxStyle, children }) => {
   return (
-    <section id={styles["hero-section"]}>
-      <div className={styles['box-title']}>Chez vous, partout et ailleurs</div>
-   
+    <section id={styles["hero-section"]} style={sectionStyle}>
+      <div className={styles["box-title"]} style={boxStyle}>
+        {children}
+      </div>
     </section>
   );
 };

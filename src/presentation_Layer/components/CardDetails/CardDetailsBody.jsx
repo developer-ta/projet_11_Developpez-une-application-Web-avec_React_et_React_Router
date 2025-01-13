@@ -1,9 +1,10 @@
 import { Carrousel } from "./Carrousel";
-import { Dropdown } from "./Dropdown";
+
 import styles from "./CardDetailsBody.module.scss";
 import { MainSection } from "./MainSection";
-import { useState } from "react";
+
 import { useLocation } from "react-router-dom";
+import { Dropdown } from "./../common/Dropdown";
 
 export const CardDetailsBody = () => {
   const { state } = useLocation();
@@ -34,8 +35,16 @@ export const CardDetailsBody = () => {
         ></MainSection>
 
         <div id={styles["details"]}>
-          <Dropdown details={description} type={"Description"}></Dropdown>
-          <Dropdown details={equipments} type={"Équipements"}></Dropdown>
+          <Dropdown
+            details={description}
+            type={"Description"}
+            width={{ width: "49%" }}
+          ></Dropdown>
+          <Dropdown
+            details={equipments}
+            type={"Équipements"}
+            width={{ width: "49%" }}
+          ></Dropdown>
         </div>
       </main>
     );
