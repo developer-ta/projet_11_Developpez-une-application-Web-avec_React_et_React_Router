@@ -24,7 +24,7 @@
 
     #root {
       width: 100%;
-    
+
       background-color: black;
 
       .content {
@@ -55,5 +55,10 @@
       }
     }
   }
+  @media (min-width: 375px) {
+    body {
+      min-width: 375px;
+   
+  }
 }
-
+}

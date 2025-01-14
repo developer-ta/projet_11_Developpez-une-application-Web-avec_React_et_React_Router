@@ -39,3 +39,29 @@
 .noUnderline {
   text-decoration: none;
 }
+@media (min-width: 375px) {
+  .header {
+    max-width: 335px;
+
+    align-items: center;
+
+    img {
+      max-width: 145px;
+      max-height: 49px;
+    }
+
+    nav {
+      min-width: 190px;
+      max-height: 17px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      align-content: center;
+      ul {
+        display: flex;
+
+        font-size: inherit;
+      }
+    }
+  }
+}

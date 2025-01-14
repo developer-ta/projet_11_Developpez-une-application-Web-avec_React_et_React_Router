@@ -12,7 +12,7 @@ export const HomeBody = () => {
         }}
         boxStyle={{ backdropFilter: "brightness(0.5)" }}
       >
-        Chez vous, partout et ailleurs
+        <p> Chez vous, partout et ailleurs</p>
       </HeroSection>
       <GallerySection></GallerySection>
     </main>
