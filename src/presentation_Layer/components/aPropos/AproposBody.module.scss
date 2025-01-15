@@ -1,7 +1,7 @@
 main {
   #details {
     display: flex;
-   
+
     max-width: 1023px;
     justify-content: space-between;
     flex-direction: column;
@@ -10,5 +10,6 @@ main {
     margin-top: 3%;
     width: 100%;
     align-items: center;
+  
   }
 }

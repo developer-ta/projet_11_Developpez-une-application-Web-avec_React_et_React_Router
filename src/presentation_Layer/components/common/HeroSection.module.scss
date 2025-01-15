@@ -48,3 +48,18 @@
       margin: 0% 16% 0 0;}
   }
 }
+@media (min-width: 476px) and (max-width: 575px){
+  #hero-section {
+    max-height: 111px;
+   
+  }
+
+  .box-title {
+    font-size: 24px;
+
+    p{   
+      width: 69%;
+      TEXT-ALIGN: left;
+      margin: 0% 16% 0 0;}
+  }
+}

@@ -3,14 +3,16 @@ import arrowBack from "../../assets/arrowBack.svg";
 import { useShowDescription } from "../../hooks/useShowDescription";
 
 export const Dropdown = ({ type, details, width }) => {
+  
+  console.log('width: ', styles[width]);
   const { isVisibleDescription, isVisibleEquipment, openDetail } =
     useShowDescription();
 
   if (type === "Équipements") {
     return (
-      <div className={styles["container-dropdown"]} style={width}>
+      <div className={styles["container-dropdown"] + " " + styles[width]}>
         <div id={styles["dropdown"]}>
-          <p>{type}</p>
+          <h5>{type}</h5>
           <img
             onClick={() => openDetail(type)}
             src={arrowBack}
@@ -37,9 +39,9 @@ export const Dropdown = ({ type, details, width }) => {
       </div>
     );
   }
-
+//Description
   return (
-    <div className={styles["container-dropdown"]} style={width}>
+    <div className={styles["container-dropdown"] + " " + styles[width]}>
       <div id={styles["dropdown"]}>
         <h5>{type}</h5>
         <img

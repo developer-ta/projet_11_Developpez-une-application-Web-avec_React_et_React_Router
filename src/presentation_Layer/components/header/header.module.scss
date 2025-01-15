@@ -65,3 +65,29 @@
     }
   }
 }
+@media (min-width: 476px) and (max-width: 575px){
+  .header {
+  
+
+    align-items: center;
+
+    img {
+      max-width: 145px;
+      max-height: 49px;
+    }
+
+    nav {
+      min-width: 190px;
+      max-height: 17px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      align-content: center;
+      ul {
+        display: flex;
+
+        font-size: inherit;
+      }
+    }
+  }
+}

@@ -47,7 +47,7 @@ export const AProposBody = () => {
           <Dropdown
             details={data.details}
             type={data.type}
-            width={{ width: "100%", margin: " 2% 0%" }}
+            width="aPropos-width"
           ></Dropdown>
         ))}
       </div>

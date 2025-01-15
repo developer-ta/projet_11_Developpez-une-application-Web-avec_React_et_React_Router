@@ -63,3 +63,11 @@
     margin: 0;
   }
 }
+@media (min-width: 476px) and (max-width: 575px){
+  #gallery-section {
+    max-width: 335px;
+    max-height: 805px;
+    background-color: unset;
+    margin: 0;
+  }
+}

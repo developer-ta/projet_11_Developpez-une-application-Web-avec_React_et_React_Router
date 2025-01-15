@@ -45,3 +45,26 @@
     }
   }
 }
+@media (min-width: 476px) and (max-width: 575px) {
+  #footer {
+    height: 309px;
+    min-width: 375px;
+    margin: -52px;
+
+   
+    a {
+      width: 100%;
+      max-width: 122px;
+      max-height: 39.44px;
+      /* height: 100%; */
+      margin-top: 4%;
+    }
+  
+    p{
+      width: 132.59px;
+      height: 46px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

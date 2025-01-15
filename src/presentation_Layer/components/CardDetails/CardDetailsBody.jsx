@@ -38,12 +38,12 @@ export const CardDetailsBody = () => {
           <Dropdown
             details={description}
             type={"Description"}
-            width={{ width: "49%" }}
+            width= "width"
           ></Dropdown>
           <Dropdown
             details={equipments}
             type={"Équipements"}
-            width={{ width: "49%" }}
+           width= "width"
           ></Dropdown>
         </div>
       </main>

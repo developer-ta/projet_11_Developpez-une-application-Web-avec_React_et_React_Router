@@ -71,3 +71,18 @@
     }
   }
 }
+@media (min-width: 476px) and (max-width: 575px) {
+  :root {
+    background-color: unset;
+    body {
+      min-width: 375px;
+      #root {
+        .content {
+          #main {   
+
+          }
+        }
+      }
+    }
+  }
+}
