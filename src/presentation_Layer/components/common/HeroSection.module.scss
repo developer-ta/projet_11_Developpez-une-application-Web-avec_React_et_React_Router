@@ -33,7 +33,7 @@
   border-radius: 10px;
 }
 
-@media (min-width: 375px) {
+ @media (min-width: 375px) and (max-width: 475px){
   #hero-section {
     max-height: 111px;
     max-width: 335px;

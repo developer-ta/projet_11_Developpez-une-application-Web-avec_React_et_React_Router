@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 475px){
   #gallery-section {
     max-width: 335px;
     max-height: 805px;

@@ -55,15 +55,17 @@
       }
     }
   }
-  @media (min-width: 375px) {
+}
+@media (min-width: 375px) and (max-width: 475px) {
+  :root {
+    background-color: unset;
     body {
       min-width: 375px;
       #root {
-        .content {#main {
-          height: 843px;
+        .content {
+          #main {
+          }
         }
-        }
-        
       }
     }
   }
