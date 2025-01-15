@@ -58,7 +58,13 @@
   @media (min-width: 375px) {
     body {
       min-width: 375px;
-   
+      #root {
+        .content {#main {
+          height: 843px;
+        }
+        }
+        
+      }
+    }
   }
-}
 }
