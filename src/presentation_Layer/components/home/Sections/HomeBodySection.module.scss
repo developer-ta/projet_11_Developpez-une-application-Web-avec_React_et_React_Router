@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 475px){
+@media (min-width: 375px) and (max-width: 475px) {
   #gallery-section {
     max-width: 335px;
     max-height: 805px;
@@ -63,11 +63,15 @@
     margin: 0;
   }
 }
-@media (min-width: 476px) and (max-width: 575px){
+@media (min-width: 476px) and (max-width: 575px) {
   #gallery-section {
-    max-width: 335px;
-    max-height: 805px;
     background-color: unset;
     margin: 0;
+    #gallery {
+      #card {
+        max-width: none;
+        
+      }
+    }
   }
 }
