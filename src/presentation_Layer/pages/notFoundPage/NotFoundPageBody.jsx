@@ -1,5 +1,7 @@
+
 import styles from "./NotFoundPage.module.scss";
 import { Link } from "react-router-dom";
+
 export const NotFoundPageBody = () => {
   return (
     <main id="main">

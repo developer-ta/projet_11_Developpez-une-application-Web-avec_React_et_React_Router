@@ -87,3 +87,19 @@
     }
   }
 }
+@media (min-width: 576px) and (max-width: 768px){
+  :root {
+    background-color: unset;
+    body {
+      min-width: 375px;
+      width: 95%;
+      #root {
+        .content {
+          #main {   
+
+          }
+        }
+      }
+    }
+  }
+}

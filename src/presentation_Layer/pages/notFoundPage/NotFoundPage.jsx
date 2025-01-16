@@ -5,7 +5,7 @@ import { MainLayout } from "../../layouts/MainLayout";
 
 export const NotFoundPage = () => {
   return (
-    <div className="content" id="home">
+    <div className="content">
       <MainLayout></MainLayout>
     </div>
   );

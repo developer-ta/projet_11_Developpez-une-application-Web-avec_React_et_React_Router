@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 6%;
- 
+
   a {
     width: 100%;
     max-width: 122px;
@@ -18,7 +18,7 @@
     margin-top: 4%;
   }
 
-  p{
+  p {
     font-size: large;
   }
 }
@@ -26,9 +26,8 @@
   #footer {
     height: 309px;
     min-width: 375px;
-    margin: -52px;
+    width: 100%;
 
-   
     a {
       width: 100%;
       max-width: 122px;
@@ -36,8 +35,8 @@
       /* height: 100%; */
       margin-top: 4%;
     }
-  
-    p{
+
+    p {
       width: 132.59px;
       height: 46px;
       text-align: center;
@@ -51,7 +50,6 @@
     min-width: 375px;
     margin: -52px;
 
-   
     a {
       width: 100%;
       max-width: 122px;
@@ -59,8 +57,30 @@
       /* height: 100%; */
       margin-top: 4%;
     }
+
+    p {
+      width: 132.59px;
+      height: 46px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #footer {
+    height: 309px;
+    min-width: 375px;
   
-    p{
+
+    a {
+      width: 100%;
+      max-width: 122px;
+      max-height: 39.44px;
+      /* height: 100%; */
+      margin-top: 4%;
+    }
+
+    p {
       width: 132.59px;
       height: 46px;
       text-align: center;
