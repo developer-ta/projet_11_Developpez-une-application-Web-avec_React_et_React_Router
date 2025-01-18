@@ -285,7 +285,8 @@ main {
       }
       .title {
         font-size: 36px;
-        position: relative; width: 100%;
+        position: relative;
+        width: 100%;
         h2 {
           font-size: 18px;
         }
@@ -314,7 +315,6 @@ main {
     #details {
       flex-direction: column;
       flex-wrap: nowrap;
-    
     }
   }
 
@@ -407,7 +407,8 @@ main {
       }
       .title {
         font-size: 36px;
-        position: relative; width: 100%;
+        position: relative;
+        width: 100%;
         h2 {
           font-size: 18px;
         }
@@ -436,7 +437,6 @@ main {
     #details {
       flex-direction: column;
       flex-wrap: nowrap;
-    
     }
   }
 
@@ -454,7 +454,6 @@ main {
     #carrousel {
       max-height: 255px;
 
-    
       .arrow-carrousel {
         img {
           height: 47px;
@@ -488,7 +487,7 @@ main {
     // .space-between {
     // }
 
-     #union {
+    #union {
       // flex-direction: column;
       // flex-wrap: nowrap;
       // position: relative;
@@ -500,7 +499,6 @@ main {
           // height: 18px;
           // position: relative;
           // top: -160%;
-       
 
           p {
             width: 100%;
@@ -513,10 +511,9 @@ main {
           // left: -31%;
           // bottom: -59%;
           img {
-         
           }
         }
-       }
+      }
 
       #group-1 {
         // flex-direction: column;
@@ -535,26 +532,90 @@ main {
       }
       #host {
         // flex-direction: row;
-       
+
         // align-items: flex-start;
         // justify-content: space-between;
         // align-content: center;
         // position: relative;
         // top: 34%;
         p {
-         
         }
         .circle {
-      
         }
       }
-     }
+    }
     #details {
       flex-direction: column;
       flex-wrap: nowrap;
-    
     }
   }
+
+  .hidden {
+    display: none;
+  }
+  .visible {
+    background-color: #f0f0f0;
+  }
+
+  //fin
+}
+@media (min-width: 769px) and (max-width: 1280px) {
+  // main {
+  //   #carrousel {
+  //     max-height: 255px;
+
+  //     .arrow-carrousel {
+  //       img {
+  //         height: 47px;
+  //       }
+  //     }
+  //   }
+
+    
+
+  //   #union {
+      
+  //     #group-2 {
+       
+  //       #tags {
+         
+
+  //         p {
+  //           width: 100%;
+  //         }
+  //       }
+  //       #rate {
+        
+  //         img {
+  //         }
+  //       }
+  //     }
+
+  //     #group-1 {
+       
+  //     }
+  //     .title {
+        
+  //       h2 {
+  //         font-size: 18px;
+  //       }
+  //       p {
+  //         font-size: 14px;
+  //       }
+  //     }
+  //     #host {
+       
+  //       p {
+  //       }
+  //       .circle {
+  //       }
+  //     }
+  //   }
+  //   #details {
+  //     flex-direction: column;
+  //     flex-wrap: nowrap;
+  //   }
+  // }
 
   .hidden {
     display: none;

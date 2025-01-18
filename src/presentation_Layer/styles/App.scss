@@ -63,8 +63,7 @@
       min-width: 375px;
       #root {
         .content {
-          #main {   
-
+          #main {
           }
         }
       }
@@ -79,15 +78,14 @@
       width: 95%;
       #root {
         .content {
-          #main {   
-
+          #main {
           }
         }
       }
     }
   }
 }
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 768px) {
   :root {
     background-color: unset;
     body {
@@ -95,11 +93,40 @@
       width: 95%;
       #root {
         .content {
-          #main {   
-
+          #main {
           }
         }
       }
     }
   }
 }
+@media (min-width: 769px) and (max-width: 1280px) {
+  :root {
+    background-color: unset;
+    body {
+      min-width: 375px;
+      width: 95%;
+      #root {
+        .content {
+          #main {
+          }
+        }
+      }
+    }
+  }
+}
+// @media (min-width: 1781px) and (max-width: 1440px) {
+//   :root {
+//     background-color: unset;
+//     body {
+//       min-width: 375px;
+//       width: 95%;
+//       #root {
+//         .content {
+//           #main {
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
