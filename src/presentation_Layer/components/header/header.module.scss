@@ -21,14 +21,14 @@
       font-weight: 500;
       font-size: 24px;
       line-height: 32px;
-      // text-decoration: underline;
+     
       text-underline-position: from-font;
       text-decoration-style: unset;
       li {
         list-style: none;
 
         a {
-          //   text-decoration: unset;
+
           color: black;
         }
       }
@@ -117,27 +117,5 @@
   }
 }
 @media (min-width: 769px) and (max-width: 1280px){
-  // .header {
-  
-  //   align-items: center;
-
-  //   img {
-  //     max-width: 145px;
-  //     max-height: 49px;
-  //   }
-
-  //   nav {
-  //     min-width: 190px;
-  //     max-height: 17px;
-  //     display: flex;
-  //     align-items: center;
-  //     flex-direction: row;
-  //     align-content: center;
-  //     ul {
-  //       display: flex;
-
-  //       font-size: inherit;
-  //     }
-  //   }
-  // }
+ 
 }
