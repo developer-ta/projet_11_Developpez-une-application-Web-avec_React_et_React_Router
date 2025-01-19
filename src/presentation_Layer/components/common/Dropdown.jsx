@@ -3,8 +3,7 @@ import arrowBack from "../../assets/arrowBack.svg";
 import { useShowDescription } from "../../hooks/useShowDescription";
 
 export const Dropdown = ({ type, details, width }) => {
-  
-  console.log('width: ', styles[width]);
+
   const { isVisibleDescription, isVisibleEquipment, openDetail } =
     useShowDescription();
 

@@ -8,7 +8,7 @@ export const useImageCarousel = (cover, pictures) => {
   const currentIndex = useRef(0);
 
   const turnImgHandler = useCallback((arg) => {
-    currentIndex.current = sliderService(currentIndex, pictures, arg);
+    currentIndex.current = sliderService(currentIndex, pictures.length, arg);
     setImg(pictures[currentIndex.current]);
     currentImgNumber.current = currentIndex.current + 1;
   });

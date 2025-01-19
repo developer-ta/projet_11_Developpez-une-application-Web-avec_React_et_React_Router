@@ -22,10 +22,10 @@ export function starRatingService(rating) {
   return listStart;
 }
 
-export function sliderService(currentIndex,pictures, arg) {
-  const maxIndex = pictures.length - 1;
+export function sliderService(currentIndex, picturesLength, arg) {
+  const maxIndex = picturesLength - 1;
 
-   currentIndex.current += arg;
+  currentIndex.current += arg;
   if (maxIndex == 0) {
     return currentIndex.current;
   } else if (currentIndex.current > maxIndex) {
@@ -33,7 +33,6 @@ export function sliderService(currentIndex,pictures, arg) {
   } else if (currentIndex.current < 0) {
     currentIndex.current = maxIndex;
   }
-  console.log('currentIndex: ', currentIndex.current);
 
   return currentIndex.current;
 }
